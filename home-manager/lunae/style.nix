@@ -1,16 +1,16 @@
 {pkgs, ...}: {
   gtk = {
-    cursorTheme.name = "Catppuccin-Mocha-Dark-Cursors";
+    cursorTheme.name = "Bibata_Modern_Classic";
     enable = true;
-    iconTheme.name = "candy-icons";
-    theme = {
-      name = "Catppuccin-Mocha-Standard-Mauve-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        accents = ["mauve"];
-        variant = "mocha";
-      };
-    };
+    iconTheme.name = "papirus-icon-theme";
+    # theme = {
+    #   name = "Catppuccin-Mocha-Standard-Mauve-Dark";
+    #   package = pkgs.catppuccin-gtk.override {
+    #     accents = ["mauve"];
+    #     variant = "mocha";
+    #   };
+    # };
   };
 
-  qt.style.name = "kvantum-dark";
+  # qt.style.name = "kvantum-dark";
 }

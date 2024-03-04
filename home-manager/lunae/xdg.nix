@@ -1,4 +1,11 @@
 {config, ...}: {
+  # make stuff work on wayland
+  home.sessionVariables = {
+    QT_QPA_PLATFORM = "wayland";
+    SDL_VIDEODRIVER = "wayland";
+    XDG_SESSION_TYPE = "wayland";
+  };
+
   xdg = {
     configFile = {
       #"ags" = {
@@ -31,10 +38,10 @@
       #};
       #"kcalcrc".source = ./dotfiles/.config/kcalcrc;
       #"kdeglobals".source = ./dotfiles/.config/kdeglobals;
-      #"kitty" = {
-        #source = ./dotfiles/.config/kitty;
-        #recursive = true;
-      #};
+      "kitty" = {
+        source = ./dotfiles/kitty;
+        recursive = true;
+      };
       #"Kvantum" = {
         #recursive = true;
         #source = ./dotfiles/.config/Kvantum;

@@ -4,7 +4,7 @@
     description = "lunae";
     extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [
-      spotify
+      bitwarden
     ];
   };
 }

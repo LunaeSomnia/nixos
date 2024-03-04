@@ -59,6 +59,8 @@
       winetricks
       obsidian
       kitty
+      spotify
+      
     ];
     stateVersion = "23.11";
     username = "lunae";

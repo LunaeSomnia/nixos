@@ -24,4 +24,10 @@
   # Enable gnome
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+
+  # Disable power profiles daemon from gnome
+  services.power-profiles-daemon.enable = false;
+
+  # Disable pulseaudio
+  hardware.pulseaudio.enable = false;
 }
