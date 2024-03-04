@@ -8,10 +8,10 @@
 
   xdg = {
     configFile = {
-      #"ags" = {
-        #recursive = true;
-        #source = ./dotfiles/.config/ags;
-      #};
+      "ags" = {
+        recursive = true;
+        source = ./dotfiles/ags;
+      };
       #"astronvim" = {
         #source = ./dotfiles/.config/astronvim;
         #recursive = true;

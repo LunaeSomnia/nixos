@@ -60,7 +60,7 @@
       obsidian
       kitty
       spotify
-      
+      bibata-cursors
     ];
     stateVersion = "23.11";
     username = "lunae";

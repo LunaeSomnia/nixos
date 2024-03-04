@@ -1,16 +1,17 @@
 {pkgs, ...}: {
   gtk = {
-    cursorTheme.name = "Bibata_Modern_Classic";
+    cursorTheme.name = "Bibata-Modern-Ice";
     enable = true;
     iconTheme.name = "papirus-icon-theme";
-    # theme = {
-    #   name = "Catppuccin-Mocha-Standard-Mauve-Dark";
-    #   package = pkgs.catppuccin-gtk.override {
-    #     accents = ["mauve"];
-    #     variant = "mocha";
-    #   };
-    # };
+    theme = {
+      name = "Adwaita-dark";
+      package = pkgs.gnome.gnome-themes-extra;
+    };
   };
 
-  # qt.style.name = "kvantum-dark";
+  qt = {
+    enable = true;
+    platformTheme = "gnome";
+    style.name = "adwaita-dark";
+  };
 }
